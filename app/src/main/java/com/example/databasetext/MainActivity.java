@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 db1.update("Book", values1, "name = ?", new String[]{"the first line code"});
                 break;
                 /*
-                通过调用 SQLiteDatabas 中的delete方法 删除价格低于50的书本
+                通过调用 SQLiteDatabase 中的delete方法 删除价格低于50的书本
                  */
             case R.id.btn_delete:
                 SQLiteDatabase db2 = dbHelper.getWritableDatabase();
